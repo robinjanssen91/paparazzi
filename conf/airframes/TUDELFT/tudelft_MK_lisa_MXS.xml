@@ -47,8 +47,8 @@
   </modules>
 
   <servos driver="Pwm">
-     <servo name="MOTOR" no="0" min="1100" neutral="1500" max="1900"/>
-     <servo name="ELEVATOR" no="1" min="1100" neutral="1500" max="1900"/>
+     <servo name="MOTOR" no="1" min="1100" neutral="1500" max="1900"/>
+     <servo name="ELEVATOR" no="0" min="1100" neutral="1500" max="1900"/>
      <servo name="RUDDER" no="2" min="1100" neutral="1500" max="1900"/>
   </servos>
 
