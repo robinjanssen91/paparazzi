@@ -70,14 +70,14 @@ PRINT_CONFIG_VAR(SECONDARY_GPS)
 #endif
 
 #define MSEC_PER_WEEK (1000*60*60*24*7)
-#define TIME_TO_SWITCH 5000 //ten s in ms
+#define TIME_TO_SWITCH 2000 //two s in ms
 
 struct GpsState gps;
 
 struct GpsTimeSync gps_time_sync;
 
 #ifdef SECONDARY_GPS
-static uint8_t current_gps_id = 0;
+static uint8_t current_gps_id = GpsId(PRIMARY_GPS);
 #endif
 
 uint8_t multi_gps_mode;
