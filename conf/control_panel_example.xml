@@ -65,6 +65,7 @@
       <arg flag="--ac" constant="@AC_ID"/>
     </program>
     <program name="SVInfo" command="sw/ground_segment/python/svinfo/svinfo.py"/>
+    <program name="AeronauticalInfo" command="sw/ground_segment/python/atc/atc.py"/>
  </section>
 
   <section name="sessions">
