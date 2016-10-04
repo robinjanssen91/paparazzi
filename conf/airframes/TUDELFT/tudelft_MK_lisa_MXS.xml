@@ -47,9 +47,11 @@
   </modules>
 
   <servos driver="Pwm">
-     <servo name="MOTOR" no="1" min="1100" neutral="1500" max="1900"/>
-     <servo name="ELEVATOR" no="0" min="1100" neutral="1500" max="1900"/>
-     <servo name="RUDDER" no="2" min="1100" neutral="1500" max="1900"/>
+     <servo name="SERVO1" no="0" min="1100" neutral="1500" max="1900"/>
+     <servo name="SERVO2" no="1" min="1100" neutral="1500" max="1900"/>
+     <servo name="SERVO3" no="2" min="1100" neutral="1500" max="1900"/>
+     <servo name="SERVO4" no="3" min="1100" neutral="1500" max="1900"/>
+     <servo name="MOTOR" no="4" min="1100" neutral="1100" max="1900"/>
   </servos>
 
   <commands>
@@ -68,8 +70,10 @@
   <command_laws>
     <!--call fun="motor_mixing_run(autopilot_motors_on,FALSE,values)"/-->
     <set servo="MOTOR"   value="@THRUST"/>
-    <set servo="ELEVATOR"   value="@PITCH"/>
-    <set servo="RUDDER"    value="@YAW"/>
+    <set servo="SERVO1"   value="@PITCH"/>
+    <set servo="SERVO2"   value="@PITCH"/>
+    <set servo="SERVO3"   value="@PITCH"/>
+    <set servo="SERVO4"   value="@PITCH"/>
   </command_laws>
 
   <!--section name="MISC">
